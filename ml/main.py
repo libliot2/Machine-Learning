@@ -7,6 +7,13 @@ from visualization import eda_visual, tsne_visual, pca_visual
 from cluster_algo import cluster_and_evaluate
 from model import model_train
 from model_eval import eval_models
+from feature_engineering import (
+    combine_distance_features,
+    aspect_slope_interaction,
+    hillshade_stats,
+    encode_categorical_areas,
+    elevation_interactions,
+)
 
 def main(
     raw_dataset_path: str = '../data/covtype.data.gz',
